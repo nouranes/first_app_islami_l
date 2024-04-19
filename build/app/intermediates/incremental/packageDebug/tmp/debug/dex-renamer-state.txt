@@ -1,4 +1,4 @@
-#Sat Oct 21 15:45:54 PDT 2023
+#Fri Apr 19 17:10:16 EET 2024
 base.0=C\:\\Users\\nouran\\StudioProjects\\first_app_islami\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
