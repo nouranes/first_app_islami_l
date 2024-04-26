@@ -21,7 +21,7 @@ class _Home_ScreenState extends State<Home_Screen> {
     Hadeth_ui(),
     Sebha_ui(),
     RadioUI(),
-    Settings_ui(),
+    // Settings_ui(),
 
 
 
@@ -67,9 +67,9 @@ class _Home_ScreenState extends State<Home_Screen> {
                 icon: ImageIcon(AssetImage("assets/images/radio.png")),
                 label: 'hade'),
 
-            BottomNavigationBarItem(
-                icon: Icon(Icons.settings),
-                label: 'hadeth'),
+            // BottomNavigationBarItem(
+            //     icon: Icon(Icons.settings),
+            //     label: 'hadeth'),
           ],
         ),
 

@@ -25,10 +25,12 @@ class _Hadeth_uiState extends State<Hadeth_ui> {
       child: Scaffold(
         backgroundColor:Colors.transparent ,
         appBar: AppBar(
-          centerTitle: false,
-          backgroundColor: Colors.white,
-          title: Text( 'Hadeth',textAlign: TextAlign.start,
-              style: TextStyle(color:Color(0xFF672CBC) )
+          // centerTitle: false,
+          backgroundColor: Colors.transparent,
+          title: Text( 'Hadeth',
+              // textAlign: TextAlign.start,
+              // style: TextStyle(color:Color(0xFF672CBC)
+              // )
           ),
 
         ),

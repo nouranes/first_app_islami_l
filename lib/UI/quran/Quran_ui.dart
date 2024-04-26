@@ -136,30 +136,29 @@ class Quran_ui extends StatelessWidget {
         backgroundColor: Colors.transparent,
         appBar:AppBar(
 
-          title: Row(
-            children: [
-              Padding(
-                padding: EdgeInsets.only(left: 20, right: 10),
-                child: Image.asset('assets/images/menu-2-line 1.png'),
-              ),
-              SizedBox(width: 15,),
+          title:
+              // Padding(
+              //   padding: EdgeInsets.only(left: 20, right: 10),
+              //   child: Image.asset('assets/images/menu-2-line 1.png'),
+              // ),
+
               Text (
-                'Quran App',
-                style: GoogleFonts.elMessiri(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF672CBC),
-                ),
+                'Quran ',
+                // style: GoogleFonts.elMessiri(
+                //   fontSize: 25,
+                //   // fontWeight: FontWeight.bold,
+                //   color: Color(0xFF672CBC),
+              //   ),
+              // ),
               ),
-            ],
-          ),
-          actions: [
-            Padding(
-                padding: EdgeInsets.symmetric(horizontal: 35.0),
-                child: Image.asset('assets/images/search-line 1.png', width: 24, height: 24)
-            ),
-          ],
-          backgroundColor: Colors.white,
+
+          // actions: [
+          //   Padding(
+          //       padding: EdgeInsets.symmetric(horizontal: 35.0),
+          //       child: Image.asset('assets/images/search-line 1.png', width: 24, height: 24)
+          //   ),
+          // ],
+          backgroundColor: Colors.transparent,
           automaticallyImplyLeading: false,
         ),
 
