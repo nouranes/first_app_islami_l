@@ -10,7 +10,10 @@ class Hadeth_Details extends StatelessWidget {
     var args = ModalRoute.of(context)?.settings.arguments as Hadeth_content;
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(image: AssetImage('assets/images/bg3.png'))
+          image: DecorationImage(
+              image: AssetImage('assets/images/Surah Full Page.png'),
+              fit: BoxFit.fill
+          )
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -28,7 +31,7 @@ class Hadeth_Details extends StatelessWidget {
 
           decoration: BoxDecoration(
               borderRadius:BorderRadius.circular(20) ,
-            color: Color(0xffF8F8F8), ),
+            color: Color(0xc2f1f1f1), ),
           child: Column(children: [
             Text(args.title,style: Theme.of(context).textTheme.titleLarge,),
             Divider(

@@ -24,6 +24,7 @@ if (flutterVersionName == null) {
 
 android {
 
+
     namespace "com.example.first_app_islami"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
@@ -42,6 +43,7 @@ android {
     }
 
     defaultConfig {
+
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.first_app_islami"
         // You can update the following values to match your application needs.
@@ -50,6 +52,8 @@ android {
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        multiDexEnabled true
+
     }
 
     buildTypes {
@@ -65,4 +69,7 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+
+
+}

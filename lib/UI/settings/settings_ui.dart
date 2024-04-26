@@ -13,25 +13,39 @@ class Settings_ui extends StatelessWidget {
 
     var mediaQuery = MediaQuery.of(context).size;
     return Container(
-      margin: EdgeInsets.all(50),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/Surah Full Page.png'),
+              fit: BoxFit.fill
+          )
+      ),
+      child: Scaffold(
+        backgroundColor: Colors.transparent,
+        appBar: AppBar(
+          title: Text('Settings'),
+        ),
+        body: Container(
+          margin: EdgeInsets.all(50),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
 
-        children: [
-          Setting_item(title: "Language", selected_option: "English",
+            children: [
+              Setting_item(title: "Language", selected_option: "English",
 
-              on_tab_option:(){
-            showLanguageBottomSheet(context);
-              } ),
-          SizedBox(height: 20),
-          Setting_item(title: "ThemeMode", selected_option: "Dark",on_tab_option:(){
-            showModeBottomSheet(context);
-          } )
-
-
+                  on_tab_option:(){
+                showLanguageBottomSheet(context);
+                  } ),
+              SizedBox(height: 20),
+              Setting_item(title: "ThemeMode", selected_option: "Dark",on_tab_option:(){
+                showModeBottomSheet(context);
+              } )
 
 
-        ],
+
+
+            ],
+          ),
+        ),
       ),
     )
 

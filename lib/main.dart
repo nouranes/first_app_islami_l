@@ -7,7 +7,10 @@ import 'package:google_fonts/google_fonts.dart';
 //import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-void main (){
+
+
+void main ()async{
+
 
   runApp(My_app());
 }
@@ -32,22 +35,25 @@ class My_app extends StatelessWidget{
           ),
               bodySmall: GoogleFonts.elMessiri(fontWeight: FontWeight.w500,fontSize: 25,color: Colors.black)
         ),
-        primaryColor: Color(0xffB7935F),
+        primaryColor: Color(0xFF672CBC),
         bottomNavigationBarTheme: BottomNavigationBarThemeData(
           type: BottomNavigationBarType.fixed,
 
-          backgroundColor: Color(0xffB7935F),
+          backgroundColor: Colors.white,
           elevation: 0,
-          selectedIconTheme: IconThemeData(color: Colors.black,size: 32),
+          selectedIconTheme: IconThemeData(color: Color(0xFF672CBC),size: 40),
             selectedItemColor: Colors.black,
-          unselectedIconTheme: IconThemeData(color: Colors.white,size: 28),
+          unselectedIconTheme: IconThemeData(color: Color(0xFF8789A3),size: 35),
           unselectedItemColor: Colors.white,
 
         ),
 
         appBarTheme: AppBarTheme(
+
+
           iconTheme: IconThemeData(
-            color: Colors.black,
+
+            color: Color(0xFF672CBC),
             size: 40 ,
           ) ,
 

@@ -20,7 +20,7 @@ class _Home_ScreenState extends State<Home_Screen> {
     Quran_ui(),
     Hadeth_ui(),
     Sebha_ui(),
-    Radio_ui(),
+    RadioUI(),
     Settings_ui(),
 
 
@@ -34,11 +34,13 @@ class _Home_ScreenState extends State<Home_Screen> {
     return Container(
       decoration: BoxDecoration(image: DecorationImage(image: AssetImage("assets/images/bg3.png"))),
       child: Scaffold(
-        backgroundColor: Colors.transparent,
-        appBar: AppBar(
-          title: Text(AppLocalizations.of(context)!.islami),
-        ),
+        // backgroundColor: Colors.transparent,
+        // appBar: AppBar(
+        //   title: Text(AppLocalizations.of(context)!.islami),
+        // ),
         bottomNavigationBar: BottomNavigationBar(
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
           onTap: (int index){
             setState(() {
               selectedIndex=index;
@@ -49,21 +51,29 @@ class _Home_ScreenState extends State<Home_Screen> {
           items: [
 
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/quran.png")),
-                label: local.quran),
+                icon: ImageIcon(AssetImage("assets/images/quran .png")),
+                label: 'Quran'
+
+            ),
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage("assets/images/quran-quran-svgrepo-com.png")),
-                label: local.hadeth),
+                label: 'hadenth'),
+
             BottomNavigationBarItem(
-                icon: ImageIcon(AssetImage("assets/images/sebha.png")),
-                label: local.sebha),
+                icon: ImageIcon(AssetImage("assets/images/sebha_blue.png")),
+                label: 'hadet'),
+
             BottomNavigationBarItem(
                 icon: ImageIcon(AssetImage("assets/images/radio.png")),
-                label: local.radio),
-            BottomNavigationBarItem(icon: Icon(Icons.settings),
-                label: local.settings),
+                label: 'hade'),
+
+            BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                label: 'hadeth'),
           ],
         ),
+
+
         body: Screens[selectedIndex],
 
 
